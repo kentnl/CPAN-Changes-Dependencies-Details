@@ -70,6 +70,7 @@ do { my $x = {
                                       'CPAN::Changes::Release' => '0',
                                       'Carp' => '0',
                                       'Moo' => '0',
+                                      'MooX::Lsub' => '0',
                                       'perl' => '5.008',
                                       'strict' => '0',
                                       'utf8' => '0',
