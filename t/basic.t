@@ -11,7 +11,7 @@ use Test::Differences;
 
 require CPAN::Changes::Dependencies::Details;
 
-my $instance = CPAN::Changes::Dependencies::Details->new( prelude => 'This is a test', );
+my $instance = CPAN::Changes::Dependencies::Details->new( preamble => 'This is a test', );
 
 $instance->add_release(
   {
@@ -41,6 +41,8 @@ $instance->add_release(
 use utf8;
 
 my $expected = <<'EOF';
+This is a test
+
 0.003 2014-01-03
  [Removed / runtime requires]
  - Moo 1.0
