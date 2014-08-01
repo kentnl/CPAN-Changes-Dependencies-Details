@@ -4,7 +4,7 @@ CPAN::Changes::Dependencies::Details - Create CPAN::Changes style file only cont
 
 # VERSION
 
-version 0.001000
+version 0.001001
 
 # SYNOPSIS
 
