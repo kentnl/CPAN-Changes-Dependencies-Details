@@ -21,7 +21,7 @@ my %WriteMakefileArgs = (
   "NAME" => "CPAN::Changes::Dependencies::Details",
   "PREREQ_PM" => {
     "CPAN::Changes" => 0,
-    "CPAN::Changes::Group::Dependencies::Details" => 0,
+    "CPAN::Changes::Group::Dependencies::Details" => "0.001001",
     "CPAN::Changes::Release" => 0,
     "Carp" => 0,
     "Moo" => 0,
@@ -48,7 +48,7 @@ my %WriteMakefileArgs = (
 
 my %FallbackPrereqs = (
   "CPAN::Changes" => 0,
-  "CPAN::Changes::Group::Dependencies::Details" => 0,
+  "CPAN::Changes::Group::Dependencies::Details" => "0.001001",
   "CPAN::Changes::Release" => 0,
   "Carp" => 0,
   "ExtUtils::MakeMaker" => 0,

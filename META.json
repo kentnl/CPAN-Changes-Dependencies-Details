@@ -81,7 +81,7 @@
       "runtime" : {
          "requires" : {
             "CPAN::Changes" : "0",
-            "CPAN::Changes::Group::Dependencies::Details" : "0",
+            "CPAN::Changes::Group::Dependencies::Details" : "0.001001",
             "CPAN::Changes::Release" : "0",
             "Carp" : "0",
             "Moo" : "0",

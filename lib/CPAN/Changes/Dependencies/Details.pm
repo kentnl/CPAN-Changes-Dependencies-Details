@@ -15,7 +15,7 @@ use Moo qw( extends );
 use MooX::Lsub qw( lsub );
 use Carp qw( croak );
 use CPAN::Changes::Release;
-use CPAN::Changes::Group::Dependencies::Details;
+use CPAN::Changes::Group::Dependencies::Details 0.001001;
 
 extends 'CPAN::Changes';
 
