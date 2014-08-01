@@ -65,6 +65,10 @@ do { my $x = {
                     },
        'runtime' => {
                       'requires' => {
+                                      'CPAN::Changes' => '0',
+                                      'CPAN::Changes::Group::Dependencies::Details' => '0',
+                                      'CPAN::Changes::Release' => '0',
+                                      'Carp' => '0',
                                       'Moo' => '0',
                                       'perl' => '5.008',
                                       'strict' => '0',
