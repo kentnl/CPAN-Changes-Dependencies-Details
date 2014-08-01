@@ -7,7 +7,7 @@ package CPAN::Changes::Dependencies::Details;
 
 our $VERSION = '0.001000';
 
-# ABSTRACT:
+# ABSTRACT: Create CPAN::Changes style file only containing dependency change information
 
 # AUTHORITY
 
