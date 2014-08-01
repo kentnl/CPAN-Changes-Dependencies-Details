@@ -86,6 +86,7 @@ sub add_release {
     my $release_object = $self->_mk_release($release);
     $self->{'releases'}->{ $release_object->version } = $release_object;
   }
+  return;
 }
 no Moo;
 
