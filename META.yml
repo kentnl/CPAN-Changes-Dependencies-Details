@@ -8,6 +8,7 @@ build_requires:
   File::Spec::Functions: '0'
   List::Util: '0'
   Scalar::Util: '0'
+  Test::Differences: '0'
   Test::More: '0.89'
 configure_requires:
   ExtUtils::MakeMaker: '0'
@@ -100,6 +101,7 @@ x_BuiltWith:
     Scalar::Util: '1.39'
     Test::CPAN::Changes: '0.30'
     Test::CPAN::Meta: '0.23'
+    Test::Differences: '0.62'
     Test::Kwalitee: '1.19'
     Test::More: '1.001003'
     Test::Pod: '1.48'

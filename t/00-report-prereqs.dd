@@ -89,6 +89,7 @@ do { my $x = {
                                    'File::Spec::Functions' => '0',
                                    'List::Util' => '0',
                                    'Scalar::Util' => '0',
+                                   'Test::Differences' => '0',
                                    'Test::More' => '0.89'
                                  }
                  }
