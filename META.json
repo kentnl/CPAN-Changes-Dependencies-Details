@@ -112,13 +112,13 @@
    "release_status" : "stable",
    "resources" : {
       "bugtracker" : {
-         "web" : "https://github.com/kentfredric/CPAN-Changes-Dependencies-Details/issues"
+         "web" : "https://github.com/kentnl/CPAN-Changes-Dependencies-Details/issues"
       },
-      "homepage" : "https://github.com/kentfredric/CPAN-Changes-Dependencies-Details",
+      "homepage" : "https://github.com/kentnl/CPAN-Changes-Dependencies-Details",
       "repository" : {
          "type" : "git",
-         "url" : "https://github.com/kentfredric/CPAN-Changes-Dependencies-Details.git",
-         "web" : "https://github.com/kentfredric/CPAN-Changes-Dependencies-Details"
+         "url" : "https://github.com/kentnl/CPAN-Changes-Dependencies-Details.git",
+         "web" : "https://github.com/kentnl/CPAN-Changes-Dependencies-Details"
       }
    },
    "version" : "0.001000",
