@@ -12,11 +12,16 @@ our $VERSION = '0.001000';
 # AUTHORITY
 
 use Moo qw( extends );
+use MooX::Lsub qw( lsub );
 use Carp qw( croak );
 use CPAN::Changes::Release;
 use CPAN::Changes::Group::Dependencies::Details;
 
 extends 'CPAN::Changes';
+
+lsub change_types => sub { [qw( Added Changed Removed )] };
+lsub phases       => sub { [qw( configure build runtime test )] };
+lsub types        => sub { [qw( requires )] };
 
 =head1 SYNOPSIS
 
