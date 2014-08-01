@@ -1,0 +1,35 @@
+NAME
+    CPAN::Changes::Dependencies::Details - Create CPAN::Changes style file
+    only containing dependency change information
+
+VERSION
+    version 0.001000
+
+SYNOPSIS
+      use CPAN::Changes::Dependencies::Details;
+      my $details = CPAN::Changes::Dependencies::Details->new(
+        preamble     => "Some message",
+        change_types => [qw( Added Changed Removed )],
+        phases       => [qw( build configure runtime test )],
+        types        => [qw( requires recommends )],
+      );
+
+      $changes->add_release({
+        version     => '0.002',
+        date        => '2009-07-06',
+        old_prereqs => CPAN::Meta->load_file('Dist-Foo-0.001/META.json')->effective_prereqs,
+        new_prereqs => CPAN::Meta->load_file('Dist-Foo-0.002/META.json')->effective_prereqs,
+      });
+
+      print $changes->serialize;
+
+AUTHOR
+    Kent Fredric <kentfredric@gmail.com>
+
+COPYRIGHT AND LICENSE
+    This software is copyright (c) 2014 by Kent Fredric
+    <kentfredric@gmail.com>.
+
+    This is free software; you can redistribute it and/or modify it under
+    the same terms as the Perl 5 programming language system itself.
+
