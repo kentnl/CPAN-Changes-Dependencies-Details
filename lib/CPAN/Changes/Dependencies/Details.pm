@@ -51,7 +51,7 @@ sub _mk_release {
   my $release_args = {};
   my $group_args   = {};
 
-  for my $realease_key ( @{$release_keys} ) {
+  for my $release_key ( @{$release_keys} ) {
     next unless exists $input_args->{$release_key};
     $release_args->{$release_key} = delete $input_args->{$release_key};
   }
