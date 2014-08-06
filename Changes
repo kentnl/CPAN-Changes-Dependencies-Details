@@ -1,5 +1,15 @@
 Release history for CPAN-Changes-Dependencies-Details
 
+0.001001 2014-08-06T19:21:21Z
+ [00 Trivial]
+ - Update ReportVersions test
+ - no code changes
+
+ [Dependencies::Stats]
+ - Dependencies changed since 0.001000, see misc/*.deps* for details
+ - develop: (suggests: ↑1)
+ - test: -3
+
 0.001000 2014-08-01T11:36:44Z
  - First version.
 

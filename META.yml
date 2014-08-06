@@ -5,9 +5,6 @@ author:
 build_requires:
   ExtUtils::MakeMaker: '0'
   File::Spec: '0'
-  File::Spec::Functions: '0'
-  List::Util: '0'
-  Scalar::Util: '0'
   Test::Differences: '0'
   Test::More: '0.89'
 configure_requires:
@@ -22,7 +19,7 @@ name: CPAN-Changes-Dependencies-Details
 provides:
   CPAN::Changes::Dependencies::Details:
     file: lib/CPAN/Changes/Dependencies/Details.pm
-    version: '0.001000'
+    version: '0.001001'
 requires:
   CPAN::Changes: '0'
   CPAN::Changes::Group::Dependencies::Details: '0.001001'
@@ -38,7 +35,7 @@ resources:
   bugtracker: https://github.com/kentnl/CPAN-Changes-Dependencies-Details/issues
   homepage: https://github.com/kentnl/CPAN-Changes-Dependencies-Details
   repository: https://github.com/kentnl/CPAN-Changes-Dependencies-Details.git
-version: '0.001000'
+version: '0.001001'
 x_BuiltWith:
   failures:
     CPAN::Changes::Release: 'Module::MetaData could not parse a version from /home/kent/perl5/perlbrew/perls/5.21.1-sdbm/lib/site_perl/5.21.1/CPAN/Changes/Release.pm'
@@ -86,19 +83,16 @@ x_BuiltWith:
     Dist::Zilla::Plugin::Test::Kwalitee: '2.07'
     Dist::Zilla::Plugin::Test::MinimumVersion: '2.000005'
     Dist::Zilla::Plugin::Test::Perl::Critic: '2.112410'
-    Dist::Zilla::Plugin::Test::ReportPrereqs: '0.016'
+    Dist::Zilla::Plugin::Test::ReportPrereqs: '0.018'
     Dist::Zilla::Plugin::TestRelease: '5.020'
     Dist::Zilla::Plugin::Twitter: '0.025'
     Dist::Zilla::Plugin::UploadToCPAN: '5.020'
-    Dist::Zilla::PluginBundle::Author::KENTNL: '2.016006'
+    Dist::Zilla::PluginBundle::Author::KENTNL: '2.016007'
     ExtUtils::MakeMaker: '6.98'
     File::Spec: '3.48'
-    File::Spec::Functions: '3.48'
-    List::Util: '1.39'
     Moo: '1.005000'
     MooX::Lsub: '0.001002'
     Pod::Coverage::TrustPod: '0.100003'
-    Scalar::Util: '1.39'
     Test::CPAN::Changes: '0.30'
     Test::CPAN::Meta: '0.23'
     Test::Differences: '0.62'
@@ -210,7 +204,7 @@ x_Dist_Zilla:
     -
       class: Dist::Zilla::Plugin::Test::ReportPrereqs
       name: '@Author::KENTNL/Test::ReportPrereqs'
-      version: '0.016'
+      version: '0.018'
     -
       class: Dist::Zilla::Plugin::Test::Kwalitee
       name: '@Author::KENTNL/Test::Kwalitee'
@@ -426,7 +420,7 @@ x_Dist_Zilla:
         Dist::Zilla::Plugin::Git::Tag:
           branch: ~
           signed: '0'
-          tag: 0.001000-source
+          tag: 0.001001-source
           tag_format: '%v-source'
           tag_message: v%v
           time_zone: local
@@ -480,7 +474,7 @@ x_Dist_Zilla:
         Dist::Zilla::Plugin::Git::Tag:
           branch: releases
           signed: '0'
-          tag: '0.001000'
+          tag: '0.001001'
           tag_format: '%v'
           tag_message: v%v
           time_zone: local
