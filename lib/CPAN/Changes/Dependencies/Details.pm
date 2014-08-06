@@ -5,7 +5,7 @@ use utf8;
 
 package CPAN::Changes::Dependencies::Details;
 
-our $VERSION = '0.001001';
+our $VERSION = '0.001002';
 
 # ABSTRACT: Create CPAN::Changes style file only containing dependency change information
 
