@@ -23,27 +23,6 @@ lsub change_types => sub { [qw( Added Changed Removed )] };
 lsub phases       => sub { [qw( configure build runtime test )] };
 lsub types        => sub { [qw( requires )] };
 
-=head1 SYNOPSIS
-
-  use CPAN::Changes::Dependencies::Details;
-  my $details = CPAN::Changes::Dependencies::Details->new(
-    preamble     => "Some message",
-    change_types => [qw( Added Changed Removed )],
-    phases       => [qw( build configure runtime test )],
-    types        => [qw( requires recommends )],
-  );
-
-  $changes->add_release({
-    version     => '0.002',
-    date        => '2009-07-06',
-    old_prereqs => CPAN::Meta->load_file('Dist-Foo-0.001/META.json')->effective_prereqs,
-    new_prereqs => CPAN::Meta->load_file('Dist-Foo-0.002/META.json')->effective_prereqs,
-  });
-
-  print $changes->serialize;
-
-=cut
-
 sub load        { croak 'This module can only generate dependency details, not read them' }
 sub load_string { croak 'This module can only generate dependency details, not read them' }
 
@@ -96,3 +75,24 @@ sub add_release {
 no Moo;
 
 1;
+
+=head1 SYNOPSIS
+
+  use CPAN::Changes::Dependencies::Details;
+  my $details = CPAN::Changes::Dependencies::Details->new(
+    preamble     => "Some message",
+    change_types => [qw( Added Changed Removed )],
+    phases       => [qw( build configure runtime test )],
+    types        => [qw( requires recommends )],
+  );
+
+  $changes->add_release({
+    version     => '0.002',
+    date        => '2009-07-06',
+    old_prereqs => CPAN::Meta->load_file('Dist-Foo-0.001/META.json')->effective_prereqs,
+    new_prereqs => CPAN::Meta->load_file('Dist-Foo-0.002/META.json')->effective_prereqs,
+  });
+
+  print $changes->serialize;
+
+=cut
