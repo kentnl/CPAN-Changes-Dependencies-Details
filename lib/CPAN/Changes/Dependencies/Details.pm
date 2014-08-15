@@ -23,27 +23,6 @@ lsub change_types => sub { [qw( Added Changed Removed )] };
 lsub phases       => sub { [qw( configure build runtime test )] };
 lsub types        => sub { [qw( requires )] };
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 sub load        { croak 'This module can only generate dependency details, not read them' }
 sub load_string { croak 'This module can only generate dependency details, not read them' }
 
