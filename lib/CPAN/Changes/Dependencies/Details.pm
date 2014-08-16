@@ -5,7 +5,7 @@ use utf8;
 
 package CPAN::Changes::Dependencies::Details;
 
-our $VERSION = '0.001001';
+our $VERSION = '0.001002';
 
 # ABSTRACT: Create CPAN::Changes style file only containing dependency change information
 
@@ -22,27 +22,6 @@ extends 'CPAN::Changes';
 lsub change_types => sub { [qw( Added Changed Removed )] };
 lsub phases       => sub { [qw( configure build runtime test )] };
 lsub types        => sub { [qw( requires )] };
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 sub load        { croak 'This module can only generate dependency details, not read them' }
 sub load_string { croak 'This module can only generate dependency details, not read them' }
@@ -109,7 +88,7 @@ CPAN::Changes::Dependencies::Details - Create CPAN::Changes style file only cont
 
 =head1 VERSION
 
-version 0.001001
+version 0.001002
 
 =head1 SYNOPSIS
 
