@@ -1,5 +1,17 @@
 Release history for CPAN-Changes-Dependencies-Details
 
+0.001003 2014-08-30T01:14:34Z
+ [00 Trivial]
+ - no code changes.
+ - Fixup author metadata
+
+ [Dependencies::Stats]
+ - Dependencies changed since 0.001002, see misc/*.deps* for details
+ - develop: +1 ↑1 (suggests: ↑2)
+
+ [Tests]
+ - Slight coverage improvement
+
 0.001002 2014-08-15T21:12:19Z
  [00 Trivial]
  - CPANDAY!

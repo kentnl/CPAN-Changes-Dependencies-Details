@@ -3,7 +3,7 @@ NAME
     only containing dependency change information
 
 VERSION
-    version 0.001002
+    version 0.001003
 
 SYNOPSIS
       use CPAN::Changes::Dependencies::Details;
@@ -24,7 +24,7 @@ SYNOPSIS
       print $changes->serialize;
 
 AUTHOR
-    Kent Fredric <kentfredric@gmail.com>
+    Kent Fredric <kentnl@cpan.org>
 
 COPYRIGHT AND LICENSE
     This software is copyright (c) 2014 by Kent Fredric
