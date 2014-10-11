@@ -113,7 +113,7 @@
    "provides" : {
       "CPAN::Changes::Dependencies::Details" : {
          "file" : "lib/CPAN/Changes/Dependencies/Details.pm",
-         "version" : "0.001004"
+         "version" : "0.001005"
       }
    },
    "release_status" : "stable",
@@ -128,7 +128,7 @@
          "web" : "https://github.com/kentnl/CPAN-Changes-Dependencies-Details"
       }
    },
-   "version" : "0.001004",
+   "version" : "0.001005",
    "x_BuiltWith" : {
       "failures" : {
          "CPAN::Changes::Release" : "Module::MetaData could not parse a version from /home/kent/perl5/perlbrew/perls/blead/lib/site_perl/5.21.3/CPAN/Changes/Release.pm"
@@ -645,7 +645,7 @@
                "Dist::Zilla::Plugin::Git::Tag" : {
                   "branch" : null,
                   "signed" : 0,
-                  "tag" : "0.001004-source",
+                  "tag" : "0.001005-source",
                   "tag_format" : "%v-source",
                   "tag_message" : "v%v",
                   "time_zone" : "local"
@@ -716,7 +716,7 @@
                "Dist::Zilla::Plugin::Git::Tag" : {
                   "branch" : "releases",
                   "signed" : 0,
-                  "tag" : "0.001004",
+                  "tag" : "0.001005",
                   "tag_format" : "%v",
                   "tag_message" : "v%v",
                   "time_zone" : "local"

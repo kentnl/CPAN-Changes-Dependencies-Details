@@ -3,7 +3,7 @@ NAME
     only containing dependency change information
 
 VERSION
-    version 0.001004
+    version 0.001005
 
 SYNOPSIS
       use CPAN::Changes::Dependencies::Details;
