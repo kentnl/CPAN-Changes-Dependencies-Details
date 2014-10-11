@@ -1,6 +1,6 @@
 Release history for CPAN-Changes-Dependencies-Details
 
-0.001005 2014-10-11T10:24:01Z 5a977de
+0.001005 2014-10-11T10:24:26Z 9e90426
 
 0.001004 2014-10-11T08:49:42Z 1c27f83
  [Bugfix]
@@ -9,7 +9,7 @@ Release history for CPAN-Changes-Dependencies-Details
 
  [Dependencies::Stats]
  - Dependencies changed since 0.001003, see misc/*.deps* for details
- - develop: (suggests: ↑1)
+ - develop: +2 ↑1 (suggests: ↑1)
  - test: (recommends: ↑1)
 
 0.001003 2014-08-30T01:14:34Z
