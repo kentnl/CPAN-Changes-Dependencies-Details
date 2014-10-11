@@ -11,7 +11,7 @@ our $VERSION = '0.001004';
 
 # AUTHORITY
 
-use Moo qw( extends );
+use Moo qw( extends around );
 use MooX::Lsub qw( lsub );
 use Carp qw( croak );
 use CPAN::Changes::Release;
@@ -64,14 +64,15 @@ sub _mk_release {
   return $release_object;
 }
 
-sub add_release {
-  my ( $self, @releases ) = @_;
+around add_release => sub {
+  my ( $orig, $self, @releases ) = @_;
   for my $release (@releases) {
     my $release_object = $self->_mk_release($release);
-    $self->{'releases'}->{ $release_object->version } = $release_object;
+    $self->$orig($release_object);
   }
   return;
-}
+};
+
 no Moo;
 
 1;
