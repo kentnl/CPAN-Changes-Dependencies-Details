@@ -1,6 +1,8 @@
 Release history for CPAN-Changes-Dependencies-Details
 
 {{$NEXT}}
+
+0.001004 2014-10-11T08:49:42Z 1c27f83
  [Bugfix]
  - Be slightly less dumb how generated releases get added to the log.
  - This is a forwards compatibility fix also ;)
