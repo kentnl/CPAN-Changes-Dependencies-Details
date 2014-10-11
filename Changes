@@ -1,5 +1,15 @@
 Release history for CPAN-Changes-Dependencies-Details
 
+0.001004 2014-10-11T08:49:42Z 1c27f83
+ [Bugfix]
+ - Be slightly less dumb how generated releases get added to the log.
+ - This is a forwards compatibility fix also ;)
+
+ [Dependencies::Stats]
+ - Dependencies changed since 0.001003, see misc/*.deps* for details
+ - develop: (suggests: ↑1)
+ - test: (recommends: ↑1)
+
 0.001003 2014-08-30T01:14:34Z
  [00 Trivial]
  - no code changes.
