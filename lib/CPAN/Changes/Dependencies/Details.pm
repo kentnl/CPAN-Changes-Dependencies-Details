@@ -109,6 +109,15 @@ version 0.001005
 
   print $changes->serialize;
 
+=head1 DESCRIPTION
+
+This module serves as a utility for producing complex change-logs in C<CPAN::Changes> style,
+specifically tailored to conveying the nature of dependency changes between releases.
+
+It typically requires some mechanism external to this code to report the state of prerequisites
+at given versions, where it computes their differences and produces sections detailing
+the kinds of changes you have elected to itemize.
+
 =head1 AUTHOR
 
 Kent Fredric <kentnl@cpan.org>
