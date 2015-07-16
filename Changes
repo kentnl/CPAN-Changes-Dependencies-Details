@@ -1,5 +1,18 @@
 Release history for CPAN-Changes-Dependencies-Details
 
+0.001005 2015-07-16T19:01:08Z d3a7714
+ [Bugfix]
+ - Was too sensitive to whitespace at EOF and was affected by recent changes in CPAN::Changes
+ - Now has a guard block in the test so the test will only run when CPAN::Changes itself serializes as expected.
+ - Tests were poorly adapted for reporting differences in utf8 data.
+
+ [Dependencies::Stats]
+ - Dependencies changed since 0.001004, see misc/*.deps* for details
+ - configure: +1 (recommends: ↑1)
+ - develop: +9 ↑2 -3 (recommends: +1, suggests: ↑2)
+ - runtime: ↓1 -1 (recommends: +1)
+ - test: +2 (recommends: ↑1 ↓1)
+
 0.001004 2014-10-11T08:49:42Z 1c27f83
  [Bugfix]
  - Be slightly less dumb how generated releases get added to the log.
@@ -7,7 +20,7 @@ Release history for CPAN-Changes-Dependencies-Details
 
  [Dependencies::Stats]
  - Dependencies changed since 0.001003, see misc/*.deps* for details
- - develop: (suggests: ↑1)
+ - develop: +2 ↑1 (suggests: ↑1)
  - test: (recommends: ↑1)
 
 0.001003 2014-08-30T01:14:34Z
@@ -47,4 +60,3 @@ Release history for CPAN-Changes-Dependencies-Details
 
 0.001000 2014-08-01T11:36:44Z
  - First version.
-

@@ -1,35 +1,35 @@
-NAME
-    CPAN::Changes::Dependencies::Details - Create CPAN::Changes style file
-    only containing dependency change information
+CPAN::Changes::Dependencies::Details
 
-VERSION
-    version 0.001004
+This module serves as a utility for producing complex change-logs in
+"CPAN::Changes" style, specifically tailored to conveying the nature of
+dependency changes between releases.
 
-SYNOPSIS
-      use CPAN::Changes::Dependencies::Details;
-      my $details = CPAN::Changes::Dependencies::Details->new(
-        preamble     => "Some message",
-        change_types => [qw( Added Changed Removed )],
-        phases       => [qw( build configure runtime test )],
-        types        => [qw( requires recommends )],
-      );
+It typically requires some mechanism external to this code to report the
+state of prerequisites at given versions, where it computes their
+differences and produces sections detailing the kinds of changes you
+have elected to itemize.
 
-      $changes->add_release({
-        version     => '0.002',
-        date        => '2009-07-06',
-        old_prereqs => CPAN::Meta->load_file('Dist-Foo-0.001/META.json')->effective_prereqs,
-        new_prereqs => CPAN::Meta->load_file('Dist-Foo-0.002/META.json')->effective_prereqs,
-      });
+INSTALLATION
 
-      print $changes->serialize;
+This is a Perl module distribution. It should be installed with whichever
+tool you use to manage your installation of Perl, e.g. any of
 
-AUTHOR
-    Kent Fredric <kentnl@cpan.org>
+  cpanm .
+  cpan  .
+  cpanp -i .
+
+Consult http://www.cpan.org/modules/INSTALL.html for further instruction.
+Should you wish to install this module manually, the procedure is
+
+  perl Makefile.PL
+  make
+  make test
+  make install
 
 COPYRIGHT AND LICENSE
-    This software is copyright (c) 2014 by Kent Fredric
-    <kentfredric@gmail.com>.
 
-    This is free software; you can redistribute it and/or modify it under
-    the same terms as the Perl 5 programming language system itself.
+This software is copyright (c) 2015 by Kent Fredric
+<kentfredric@gmail.com>.
 
+This is free software; you can redistribute it and/or modify it under
+the same terms as the Perl 5 programming language system itself.

@@ -1,11 +1,10 @@
-use 5.008;    # utf8
+use 5.006;    # our
 use strict;
 use warnings;
-use utf8;
 
 package CPAN::Changes::Dependencies::Details;
 
-our $VERSION = '0.001004';
+our $VERSION = '0.001005';
 
 # ABSTRACT: Create CPAN::Changes style file only containing dependency change information
 
@@ -89,7 +88,7 @@ CPAN::Changes::Dependencies::Details - Create CPAN::Changes style file only cont
 
 =head1 VERSION
 
-version 0.001004
+version 0.001005
 
 =head1 SYNOPSIS
 
@@ -110,13 +109,22 @@ version 0.001004
 
   print $changes->serialize;
 
+=head1 DESCRIPTION
+
+This module serves as a utility for producing complex change-logs in C<CPAN::Changes> style,
+specifically tailored to conveying the nature of dependency changes between releases.
+
+It typically requires some mechanism external to this code to report the state of prerequisites
+at given versions, where it computes their differences and produces sections detailing
+the kinds of changes you have elected to itemize.
+
 =head1 AUTHOR
 
 Kent Fredric <kentnl@cpan.org>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is copyright (c) 2014 by Kent Fredric <kentfredric@gmail.com>.
+This software is copyright (c) 2015 by Kent Fredric <kentfredric@gmail.com>.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.
