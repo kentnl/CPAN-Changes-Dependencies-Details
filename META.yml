@@ -7,6 +7,7 @@ build_requires:
   File::Spec: '0'
   Test::Differences: '0'
   Test::More: '0.89'
+  charnames: '0'
   perl: '5.008'
 configure_requires:
   ExtUtils::MakeMaker: '0'
