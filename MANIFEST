@@ -4,11 +4,13 @@
 .perltidyrc
 .travis.yml
 Changes
+INSTALL.SKIP
 LICENSE
 MANIFEST
 META.json
 META.yml
 Makefile.PL
+README
 dist.ini
 dist.ini.meta
 lib/CPAN/Changes/Dependencies/Details.pm
@@ -17,6 +19,7 @@ misc/Changes.deps
 misc/Changes.deps.all
 misc/Changes.deps.dev
 misc/Changes.deps.opt
+misc/built_with.json
 misc/perlcritic.deps
 perlcritic.rc
 t/00-compile/lib_CPAN_Changes_Dependencies_Details_pm.t
@@ -26,9 +29,9 @@ t/bangs.t
 t/basic.t
 weaver.ini
 xt/author/critic.t
+xt/author/eol.t
 xt/release/cpan-changes.t
 xt/release/distmeta.t
-xt/release/eol.t
 xt/release/kwalitee.t
 xt/release/minimum-version.t
 xt/release/pod-coverage.t
