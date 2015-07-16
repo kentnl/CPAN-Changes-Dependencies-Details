@@ -13,4 +13,3 @@ This file contains changes in REQUIRED dependencies for standard CPAN phases (co
  - File::Spec::Functions
  - List::Util
  - Scalar::Util
-
