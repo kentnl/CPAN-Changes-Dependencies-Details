@@ -1,5 +1,7 @@
 Release history for CPAN-Changes-Dependencies-Details
 
+0.001006 2015-07-16T20:19:28Z a02d119
+
 0.001005 2015-07-16T19:01:08Z d3a7714
  [Bugfix]
  - Was too sensitive to whitespace at EOF and was affected by recent changes in CPAN::Changes
