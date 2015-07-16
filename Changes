@@ -1,6 +1,8 @@
 Release history for CPAN-Changes-Dependencies-Details
 
 {{$NEXT}}
+
+0.001005 2015-07-16T19:01:08Z d3a7714
  [Bugfix]
  - Was too sensitive to whitespace at EOF and was affected by recent changes in CPAN::Changes
  - Now has a guard block in the test so the test will only run when CPAN::Changes itself serializes as expected.
