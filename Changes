@@ -1,6 +1,11 @@
 Release history for CPAN-Changes-Dependencies-Details
 
 {{$NEXT}}
+ [Bugfix]
+ - Was too sensitive to whitespace at EOF and was affected by recent changes in CPAN::Changes
+ - Now has a guard block in the test so the test will only run when CPAN::Changes itself serializes as expected.
+ - Tests were poorly adapted for reporting differences in utf8 data.
+
  [Dependencies::Stats]
  - Dependencies changed since 0.001004, see misc/*.deps* for details
  - configure: +1 (recommends: ↑1)

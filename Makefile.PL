@@ -32,7 +32,8 @@ my %WriteMakefileArgs = (
     "ExtUtils::MakeMaker" => 0,
     "File::Spec" => 0,
     "Test::Differences" => 0,
-    "Test::More" => "0.89"
+    "Test::More" => "0.89",
+    "charnames" => 0
   },
   "VERSION" => "0.001005",
   "test" => {
@@ -52,6 +53,7 @@ my %FallbackPrereqs = (
   "MooX::Lsub" => 0,
   "Test::Differences" => 0,
   "Test::More" => "0.89",
+  "charnames" => 0,
   "strict" => 0,
   "utf8" => 0,
   "warnings" => 0
