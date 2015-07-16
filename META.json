@@ -20,7 +20,7 @@
          },
          "requires" : {
             "ExtUtils::MakeMaker" : "0",
-            "perl" : "5.008"
+            "perl" : "5.006"
          }
       },
       "develop" : {
@@ -103,9 +103,8 @@
             "Carp" : "0",
             "Moo" : "0",
             "MooX::Lsub" : "0",
-            "perl" : "5.008",
+            "perl" : "5.006",
             "strict" : "0",
-            "utf8" : "0",
             "warnings" : "0"
          }
       },
@@ -121,7 +120,7 @@
             "Test::Differences" : "0",
             "Test::More" : "0.89",
             "charnames" : "0",
-            "perl" : "5.008"
+            "perl" : "5.006"
          }
       }
    },
