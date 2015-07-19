@@ -1,6 +1,8 @@
 Release history for CPAN-Changes-Dependencies-Details
 
 {{$NEXT}}
+ [Bugfix]
+ - Guard tests against further changes.
 
 0.001005 2015-07-16T19:01:08Z d3a7714
  [Bugfix]
