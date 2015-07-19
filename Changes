@@ -1,5 +1,7 @@
 Release history for CPAN-Changes-Dependencies-Details
 
+0.001007 2015-07-19T20:14:13Z 660aa80
+
 0.001006 2015-07-19T20:11:38Z adebbd4
  [Bugfix]
  - Guard tests against further changes.
