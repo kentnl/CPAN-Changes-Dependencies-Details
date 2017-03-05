@@ -4,7 +4,7 @@ use warnings;
 
 package CPAN::Changes::Dependencies::Details;
 
-our $VERSION = '0.001006';
+our $VERSION = '0.001007';
 
 # ABSTRACT: Create CPAN::Changes style file only containing dependency change information
 
@@ -88,7 +88,7 @@ CPAN::Changes::Dependencies::Details - Create CPAN::Changes style file only cont
 
 =head1 VERSION
 
-version 0.001006
+version 0.001007
 
 =head1 SYNOPSIS
 
@@ -124,7 +124,7 @@ Kent Fredric <kentnl@cpan.org>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is copyright (c) 2015 by Kent Fredric <kentfredric@gmail.com>.
+This software is copyright (c) 2017 by Kent Fredric <kentfredric@gmail.com>.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.

@@ -36,6 +36,7 @@ EOF
     $CPAN::Changes::VERSION, $sample_version;
 }
 
+plan tests => 4;
 local $TODO;
 if ( not eval "CPAN::Changes->VERSION(q[0.500]); 1" ) {
   $TODO = "Legacy serialization scheme";
@@ -102,9 +103,7 @@ my $result = $instance->serialize;    # returns chars
 
 # eq_or_diff seems to hate literal chars, but seems to be fine with bytes.
 # Look into this.
-utf8::encode($result);
-utf8::encode($expected);
+utf8::downgrade($result, 1) or utf8::encode($result);
+utf8::downgrade($expected, 1) or utf8::encode($expected);
 
 eq_or_diff_text( $result, $expected, 'Serialize works as intended' );
-
-done_testing;

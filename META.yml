@@ -6,14 +6,14 @@ build_requires:
   ExtUtils::MakeMaker: '0'
   File::Spec: '0'
   Test::Differences: '0'
-  Test::More: '0.89'
+  Test::More: '0'
   charnames: '0'
   perl: '5.006'
 configure_requires:
   ExtUtils::MakeMaker: '0'
   perl: '5.006'
 dynamic_config: 0
-generated_by: 'Dist::Zilla version 5.037, CPAN::Meta::Converter version 2.150005'
+generated_by: 'Dist::Zilla version 6.009, CPAN::Meta::Converter version 2.150010'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -22,7 +22,7 @@ name: CPAN-Changes-Dependencies-Details
 provides:
   CPAN::Changes::Dependencies::Details:
     file: lib/CPAN/Changes/Dependencies/Details.pm
-    version: '0.001006'
+    version: '0.001007'
 recommends:
   Moo: '1.000008'
 requires:
@@ -39,4 +39,4 @@ resources:
   bugtracker: https://github.com/kentnl/CPAN-Changes-Dependencies-Details/issues
   homepage: https://github.com/kentnl/CPAN-Changes-Dependencies-Details
   repository: https://github.com/kentnl/CPAN-Changes-Dependencies-Details.git
-version: '0.001006'
+version: '0.001007'
